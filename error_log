@@ -1,0 +1,683 @@
+[23-Sep-2023 08:14:48 UTC] PHP Warning:  mysqli_real_connect(): (HY000/1045): Access denied for user 'hypebeas_hypebeast'@'localhost' (using password: YES) in /home/hypebeas/public_html/wp-includes/class-wpdb.php on line 2035
+[23-Sep-2023 08:14:48 UTC] PHP Stack trace:
+[23-Sep-2023 08:14:48 UTC] PHP   1. {main}() /home/hypebeas/public_html/index.php:0
+[23-Sep-2023 08:14:48 UTC] PHP   2. require() /home/hypebeas/public_html/index.php:17
+[23-Sep-2023 08:14:48 UTC] PHP   3. require_once() /home/hypebeas/public_html/wp-blog-header.php:13
+[23-Sep-2023 08:14:48 UTC] PHP   4. require_once() /home/hypebeas/public_html/wp-load.php:50
+[23-Sep-2023 08:14:48 UTC] PHP   5. require_once() /home/hypebeas/public_html/wp-config.php:96
+[23-Sep-2023 08:14:48 UTC] PHP   6. require_wp_db() /home/hypebeas/public_html/wp-settings.php:124
+[23-Sep-2023 08:14:48 UTC] PHP   7. wpdb->__construct($dbuser = 'hypebeas_hypebeast', $dbpassword = '*T]dlXf^(2ypv', $dbname = 'hypebeas_hypebeast', $dbhost = 'localhost') /home/hypebeas/public_html/wp-includes/load.php:678
+[23-Sep-2023 08:14:48 UTC] PHP   8. wpdb->db_connect($allow_bail = *uninitialized*) /home/hypebeas/public_html/wp-includes/class-wpdb.php:773
+[23-Sep-2023 08:14:48 UTC] PHP   9. mysqli_real_connect($link = class mysqli { public $client_info = 'mysqlnd 7.4.33'; public $client_version = 70433; public $connect_errno = 1045; public $connect_error = 'Access denied for user \'hypebeas_hypebeast\'@\'localhost\' (using password: YES)'; public $errno = 1045; public $error = 'Access denied for user \'hypebeas_hypebeast\'@\'localhost\' (using password: YES)' }, $host = 'localhost', $user = 'hypebeas_hypebeast', $password = '*T]dlXf^(2ypv', $database = NULL, $port = NULL, $socket = NULL, $flags = 0) /home/hypebeas/public_html/wp-includes/class-wpdb.php:2035
+[06-Oct-2023 20:31:46 UTC] WordPress database error Connection was killed for query SELECT option_value FROM hb_options WHERE option_name = 'fs_storage_logger' LIMIT 1 made by require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), include_once('/plugins/photoblocks-grid-gallery/photoblocks.php'), photoblocks_starter, photob_fs, fs_dynamic_init, Freemius::instance, Freemius::_load_required_static, FS_Logger::get_logger, FS_Logger::init, get_option
+[13-Oct-2023 11:36:22 UTC] PHP Warning:  Đã xảy ra lỗi không mong muốn. Có thể có sự cố với WordPress.org hoặc cấu hình của máy chủ. Nếu bạn tiếp tục gặp sự cố, vui lòng thử hỏi trong <a href="https://wordpress.org/support/forums/">diễn đàn hỗ trợ</a>. (WordPress không thể thiết lập kết nối an toàn tới WordPress.org. Vui lòng liên hệ quản trị máy chủ của bạn.) in /home/hypebeas/public_html/wp-admin/includes/translation-install.php on line 68
+[13-Oct-2023 11:36:22 UTC] PHP Stack trace:
+[13-Oct-2023 11:36:22 UTC] PHP   1. {main}() /home/hypebeas/public_html/wp-login.php:0
+[13-Oct-2023 11:36:22 UTC] PHP   2. login_footer($input_id = *uninitialized*) /home/hypebeas/public_html/wp-login.php:1565
+[13-Oct-2023 11:36:22 UTC] PHP   3. wp_dropdown_languages($args = ['id' => 'language-switcher-locales', 'name' => 'wp_lang', 'selected' => 'vi', 'show_available_translations' => FALSE, 'explicit_option_en_us' => TRUE, 'languages' => [0 => 'vi']]) /home/hypebeas/public_html/wp-login.php:362
+[13-Oct-2023 11:36:22 UTC] PHP   4. wp_get_available_translations() /home/hypebeas/public_html/wp-includes/l10n.php:1566
+[13-Oct-2023 11:36:22 UTC] PHP   5. translations_api($type = 'core', $args = ['version' => '6.3.2']) /home/hypebeas/public_html/wp-admin/includes/translation-install.php:133
+[13-Oct-2023 11:36:22 UTC] PHP   6. trigger_error($message = 'Đã xảy ra lỗi không mong muốn. Có thể có sự cố với WordPress.org hoặc cấu hình của máy chủ. Nếu bạn tiếp tục gặp sự cố, vui lòng thử hỏi trong <a href="https://wordpress.org/support/forums/">diễn đàn hỗ trợ</a>. (WordPress không thể thiết lập kết nối an toàn tới WordPress.org. Vui lòng liên hệ quản trị máy chủ của bạn.)', $error_type = 512) /home/hypebeas/public_html/wp-admin/includes/translation-install.php:68
+[13-Oct-2023 11:39:24 UTC] WordPress database error Commands out of sync; you can't run this command now for query SHOW FULL COLUMNS FROM `hb_options` made by shutdown_action_hook, do_action('shutdown'), WP_Hook->do_action, WP_Hook->apply_filters, call_user_func_array, Automattic\WooCommerce\Blocks\Assets\Api->update_script_data_cache, set_transient, update_option
+[17-Oct-2023 11:11:47 Asia/Ho_Chi_Minh] order_total was called incorrectly. Order properties should not be accessed directly. Backtrace: require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), do_action('template_redirect'), WP_Hook->do_action, WP_Hook->apply_filters, call_user_func_array, WC_AJAX::do_wc_ajax, do_action('wc_ajax_checkout'), WP_Hook->do_action, WP_Hook->apply_filters, call_user_func_array, WC_AJAX::checkout, WC_Checkout->process_checkout, WC_Checkout->process_order_payment, vnpay\Gateways\vnpayGateway->process_payment, vnpay\Gateways\vnpayGateway->redirect, WC_Abstract_Legacy_Order->__get, wc_doing_it_wrong. This message was added in version 3.0.
+[17-Oct-2023 11:13:09 Asia/Ho_Chi_Minh] order_total was called incorrectly. Order properties should not be accessed directly. Backtrace: require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), do_action('template_redirect'), WP_Hook->do_action, WP_Hook->apply_filters, call_user_func_array, WC_AJAX::do_wc_ajax, do_action('wc_ajax_checkout'), WP_Hook->do_action, WP_Hook->apply_filters, call_user_func_array, WC_AJAX::checkout, WC_Checkout->process_checkout, WC_Checkout->process_order_payment, vnpay\Gateways\vnpayGateway->process_payment, vnpay\Gateways\vnpayGateway->redirect, WC_Abstract_Legacy_Order->__get, wc_doing_it_wrong. This message was added in version 3.0.
+[18-Oct-2023 16:52:46 UTC] PHP Warning:  Đã xảy ra lỗi không mong muốn. Có thể có sự cố với WordPress.org hoặc cấu hình của máy chủ. Nếu bạn tiếp tục gặp sự cố, vui lòng thử hỏi trong <a href="https://wordpress.org/support/forums/">diễn đàn hỗ trợ</a>. (WordPress không thể thiết lập kết nối an toàn tới WordPress.org. Vui lòng liên hệ quản trị máy chủ của bạn.) in /home/hypebeas/public_html/wp-admin/includes/translation-install.php on line 68
+[18-Oct-2023 16:52:46 UTC] PHP Stack trace:
+[18-Oct-2023 16:52:46 UTC] PHP   1. {main}() /home/hypebeas/public_html/wp-login.php:0
+[18-Oct-2023 16:52:46 UTC] PHP   2. login_footer($input_id = *uninitialized*) /home/hypebeas/public_html/wp-login.php:1565
+[18-Oct-2023 16:52:46 UTC] PHP   3. wp_dropdown_languages($args = ['id' => 'language-switcher-locales', 'name' => 'wp_lang', 'selected' => 'vi', 'show_available_translations' => FALSE, 'explicit_option_en_us' => TRUE, 'languages' => [0 => 'vi']]) /home/hypebeas/public_html/wp-login.php:362
+[18-Oct-2023 16:52:46 UTC] PHP   4. wp_get_available_translations() /home/hypebeas/public_html/wp-includes/l10n.php:1566
+[18-Oct-2023 16:52:46 UTC] PHP   5. translations_api($type = 'core', $args = ['version' => '6.3.2']) /home/hypebeas/public_html/wp-admin/includes/translation-install.php:133
+[18-Oct-2023 16:52:46 UTC] PHP   6. trigger_error($message = 'Đã xảy ra lỗi không mong muốn. Có thể có sự cố với WordPress.org hoặc cấu hình của máy chủ. Nếu bạn tiếp tục gặp sự cố, vui lòng thử hỏi trong <a href="https://wordpress.org/support/forums/">diễn đàn hỗ trợ</a>. (WordPress không thể thiết lập kết nối an toàn tới WordPress.org. Vui lòng liên hệ quản trị máy chủ của bạn.)', $error_type = 512) /home/hypebeas/public_html/wp-admin/includes/translation-install.php:68
+[20-Oct-2023 01:52:14 UTC] You didn't provide an API key. You need to provide your API key in an Authorization header using Bearer auth (i.e. Authorization: Bearer YOUR_KEY), or as the password field (with blank username) if you're accessing the API from your browser and are prompted for a username and password. You can obtain an API key from https://platform.openai.com/account/api-keys.
+[20-Oct-2023 01:52:14 UTC] You didn't provide an API key. You need to provide your API key in an Authorization header using Bearer auth (i.e. Authorization: Bearer YOUR_KEY), or as the password field (with blank username) if you're accessing the API from your browser and are prompted for a username and password. You can obtain an API key from https://platform.openai.com/account/api-keys.
+[20-Oct-2023 01:53:06 UTC] You didn't provide an API key. You need to provide your API key in an Authorization header using Bearer auth (i.e. Authorization: Bearer YOUR_KEY), or as the password field (with blank username) if you're accessing the API from your browser and are prompted for a username and password. You can obtain an API key from https://platform.openai.com/account/api-keys.
+[20-Oct-2023 01:53:06 UTC] You didn't provide an API key. You need to provide your API key in an Authorization header using Bearer auth (i.e. Authorization: Bearer YOUR_KEY), or as the password field (with blank username) if you're accessing the API from your browser and are prompted for a username and password. You can obtain an API key from https://platform.openai.com/account/api-keys.
+[20-Oct-2023 01:53:59 UTC] Internal server error
+[20-Oct-2023 01:53:59 UTC] Internal server error
+[20-Oct-2023 01:56:57 UTC] Error internal_error: Internal server error
+[20-Oct-2023 01:56:57 UTC] Error internal_error: Internal server error
+[20-Oct-2023 01:58:06 UTC] Error 502: Bad gateway.
+[20-Oct-2023 01:58:06 UTC] Error 502: Bad gateway.
+[20-Oct-2023 02:05:05 UTC] Error internal_error: Internal server error
+[20-Oct-2023 02:05:05 UTC] Error internal_error: Internal server error
+[20-Oct-2023 02:10:04 UTC] Error internal_error: Internal server error
+[20-Oct-2023 02:10:04 UTC] Error internal_error: Internal server error
+[08-Nov-2023 08:04:29 Asia/Ho_Chi_Minh] order_total was called incorrectly. Order properties should not be accessed directly. Backtrace: require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), do_action('template_redirect'), WP_Hook->do_action, WP_Hook->apply_filters, call_user_func_array, WC_AJAX::do_wc_ajax, do_action('wc_ajax_checkout'), WP_Hook->do_action, WP_Hook->apply_filters, call_user_func_array, WC_AJAX::checkout, WC_Checkout->process_checkout, WC_Checkout->process_order_payment, vnpay\Gateways\vnpayGateway->process_payment, vnpay\Gateways\vnpayGateway->redirect, WC_Abstract_Legacy_Order->__get, wc_doing_it_wrong. This message was added in version 3.0.
+[21-Nov-2023 12:33:59 UTC] WPCC - No URL is found in the database. Site ID to check: 336, Last Crawled URL ID: does not exist
+[21-Nov-2023 12:33:59 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[21-Nov-2023 12:40:41 UTC] WPCC - No URL is found in the database. Site ID to check: 336, Last Crawled URL ID: does not exist
+[21-Nov-2023 12:40:41 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[21-Nov-2023 12:42:44 UTC] WPCC - No URL is found in the database. Site ID to check: 336, Last Crawled URL ID: does not exist
+[21-Nov-2023 12:42:44 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[21-Nov-2023 12:44:47 UTC] WPCC - No URL is found in the database. Site ID to check: 336, Last Crawled URL ID: does not exist
+[21-Nov-2023 12:44:47 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[21-Nov-2023 12:45:45 UTC] WPCC - No URL is found in the database. Site ID to check: 336, Last Crawled URL ID: does not exist
+[21-Nov-2023 12:45:45 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[21-Nov-2023 12:46:44 UTC] WPCC - No URL is found in the database. Site ID to check: 336, Last Crawled URL ID: does not exist
+[21-Nov-2023 12:46:44 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[21-Nov-2023 12:47:45 UTC] WPCC - No URL is found in the database. Site ID to check: 336, Last Crawled URL ID: does not exist
+[21-Nov-2023 12:47:45 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[21-Nov-2023 12:48:47 UTC] WPCC - No URL is found in the database. Site ID to check: 336, Last Crawled URL ID: does not exist
+[21-Nov-2023 12:48:47 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[21-Nov-2023 12:49:53 UTC] WPCC - No URL is found in the database. Site ID to check: 336, Last Crawled URL ID: does not exist
+[21-Nov-2023 12:49:53 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[21-Nov-2023 12:50:39 UTC] WPCC - No URL is found in the database. Site ID to check: 336, Last Crawled URL ID: does not exist
+[21-Nov-2023 12:50:39 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[21-Nov-2023 12:51:42 UTC] WPCC - No URL is found in the database. Site ID to check: 336, Last Crawled URL ID: does not exist
+[21-Nov-2023 12:51:42 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[21-Nov-2023 12:52:39 UTC] WPCC - No URL is found in the database. Site ID to check: 336, Last Crawled URL ID: does not exist
+[21-Nov-2023 12:52:39 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[21-Nov-2023 12:54:16 UTC] WPCC - No URL is found in the database. Site ID to check: 336, Last Crawled URL ID: does not exist
+[21-Nov-2023 12:54:16 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[21-Nov-2023 12:54:40 UTC] WPCC - No URL is found in the database. Site ID to check: 336, Last Crawled URL ID: does not exist
+[21-Nov-2023 12:54:40 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[21-Nov-2023 12:55:43 UTC] WPCC - No URL is found in the database. Site ID to check: 336, Last Crawled URL ID: does not exist
+[21-Nov-2023 12:55:43 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[21-Nov-2023 12:56:42 UTC] WPCC - No URL is found in the database. Site ID to check: 336, Last Crawled URL ID: does not exist
+[21-Nov-2023 12:56:42 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[21-Nov-2023 12:57:55 UTC] WPCC - No URL is found in the database. Site ID to check: 336, Last Crawled URL ID: does not exist
+[21-Nov-2023 12:57:55 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[21-Nov-2023 12:58:42 UTC] WPCC - No URL is found in the database. Site ID to check: 336, Last Crawled URL ID: does not exist
+[21-Nov-2023 12:58:42 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[21-Nov-2023 13:02:59 UTC] WPCC (error): Bài trùng lặp. (Chi tiết: ID bài viết: 341)
+[21-Nov-2023 13:02:59 UTC] WPCC (info): Bài trùng lặp. (Chi tiết: Một bài trùng lặp đã được tìm thấy. URL hiện tại: https://footwearnews.com/shoes/sneaker-news/jae-tips-saucony-grid-shadow-2-release-date-november-2023-1203545315/, ID bài đăng trùng lặp: 341, Tiêu đề bài đăng trùng lặp: Jae Tips’ Second Saucony Sneaker Will Get a Global Release Following Its ComplexCon Debut, ID trang web: 347. URL không được lưu và nó được đánh dấu là đã lưu để không thử lại.)
+(Ngoại lệ: #0 /home/hypebeas/public_html/wp-content/plugins/wp-content-crawler/app/Objects/Crawling/Savers/PostSaver.php(280): WPCCrawler\Objects\Crawling\Savers\PostSaver->handleIfDuplicate()
+#1 /home/hypebeas/public_html/wp-content/plugins/wp-content-crawler/app/Objects/Crawling/Savers/PostSaver.php(204): WPCCrawler\Objects\Crawling\Savers\PostSaver->savePost(347, Array, false, true, false, false, false)
+#2 /home/hypebeas/public_html/wp-content/plugins/wp-content-crawler/app/Services/SchedulingService.php(160): WPCCrawler\Objects\Crawling\Savers\PostSaver->executePostSave(347)
+#3 [internal function]: WPCCrawler\Services\SchedulingService->WPCCrawler\Services\{closure}(347)
+#4 /home/hypebeas/public_html/wp-content/plugins/wp-content-crawler/app/Services/SchedulingService.php(422): call_user_func(Object(Closure), 347)
+#5 /home/hypebeas/public_html/wp-content/plugins/wp-content-crawler/app/Services/SchedulingService.php(166): WPCCrawler\Services\SchedulingService->execute('_wpcc_last_craw...', NULL, Object(Closure), Object(Closure), Object(Closure))
+#6 [internal function]: WPCCrawler\Services\SchedulingService->executeEventCrawlPost()
+#7 /home/hypebeas/public_html/wp-includes/class-wp-hook.php(324): call_user_func_array(Array, Array)
+#8 /home/hypebeas/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#9 /home/hypebeas/public_html/wp-includes/plugin.php(565): WP_Hook->do_action(Array)
+#10 /home/hypebeas/public_html/wp-cron.php(191): do_action_ref_array('wpcc_event_craw...', Array)
+#11 {main})
+[21-Nov-2023 13:03:39 UTC] WPCC (error): Bài trùng lặp. (Chi tiết: ID bài viết: 342)
+[21-Nov-2023 13:03:39 UTC] WPCC (info): Bài trùng lặp. (Chi tiết: Một bài trùng lặp đã được tìm thấy. URL hiện tại: https://footwearnews.com/shoes/womens-footwear/jojo-bragais-shoes-miss-universe-2023-1203557304/, ID bài đăng trùng lặp: 342, Tiêu đề bài đăng trùng lặp: Everything You Need to Know About Jojo Bragais Shoes, the Miss Universe 2023 Footwear Sponsor, ID trang web: 347. URL không được lưu và nó được đánh dấu là đã lưu để không thử lại.)
+(Ngoại lệ: #0 /home/hypebeas/public_html/wp-content/plugins/wp-content-crawler/app/Objects/Crawling/Savers/PostSaver.php(280): WPCCrawler\Objects\Crawling\Savers\PostSaver->handleIfDuplicate()
+#1 /home/hypebeas/public_html/wp-content/plugins/wp-content-crawler/app/Objects/Crawling/Savers/PostSaver.php(204): WPCCrawler\Objects\Crawling\Savers\PostSaver->savePost(347, Array, false, true, false, false, false)
+#2 /home/hypebeas/public_html/wp-content/plugins/wp-content-crawler/app/Services/SchedulingService.php(160): WPCCrawler\Objects\Crawling\Savers\PostSaver->executePostSave(347)
+#3 [internal function]: WPCCrawler\Services\SchedulingService->WPCCrawler\Services\{closure}(347)
+#4 /home/hypebeas/public_html/wp-content/plugins/wp-content-crawler/app/Services/SchedulingService.php(422): call_user_func(Object(Closure), 347)
+#5 /home/hypebeas/public_html/wp-content/plugins/wp-content-crawler/app/Services/SchedulingService.php(166): WPCCrawler\Services\SchedulingService->execute('_wpcc_last_craw...', NULL, Object(Closure), Object(Closure), Object(Closure))
+#6 [internal function]: WPCCrawler\Services\SchedulingService->executeEventCrawlPost()
+#7 /home/hypebeas/public_html/wp-includes/class-wp-hook.php(324): call_user_func_array(Array, Array)
+#8 /home/hypebeas/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#9 /home/hypebeas/public_html/wp-includes/plugin.php(565): WP_Hook->do_action(Array)
+#10 /home/hypebeas/public_html/wp-cron.php(191): do_action_ref_array('wpcc_event_craw...', Array)
+#11 {main})
+[21-Nov-2023 13:04:44 UTC] WPCC (error): Bài trùng lặp. (Chi tiết: ID bài viết: 343)
+[21-Nov-2023 13:04:44 UTC] WPCC (info): Bài trùng lặp. (Chi tiết: Một bài trùng lặp đã được tìm thấy. URL hiện tại: https://footwearnews.com/shoes/sneaker-news/devin-booker-nike-book-1-shoes-clay-orange-suns-jazz-game-1203557188/, ID bài đăng trùng lặp: 343, Tiêu đề bài đăng trùng lặp: Devin Booker Debuts Signature Nike Book 1 Sneakers in ‘Clay Orange’ During Phoenix Suns’ Game Against Utah Jazz, ID trang web: 347. URL không được lưu và nó được đánh dấu là đã lưu để không thử lại.)
+(Ngoại lệ: #0 /home/hypebeas/public_html/wp-content/plugins/wp-content-crawler/app/Objects/Crawling/Savers/PostSaver.php(280): WPCCrawler\Objects\Crawling\Savers\PostSaver->handleIfDuplicate()
+#1 /home/hypebeas/public_html/wp-content/plugins/wp-content-crawler/app/Objects/Crawling/Savers/PostSaver.php(204): WPCCrawler\Objects\Crawling\Savers\PostSaver->savePost(347, Array, false, true, false, false, false)
+#2 /home/hypebeas/public_html/wp-content/plugins/wp-content-crawler/app/Services/SchedulingService.php(160): WPCCrawler\Objects\Crawling\Savers\PostSaver->executePostSave(347)
+#3 [internal function]: WPCCrawler\Services\SchedulingService->WPCCrawler\Services\{closure}(347)
+#4 /home/hypebeas/public_html/wp-content/plugins/wp-content-crawler/app/Services/SchedulingService.php(422): call_user_func(Object(Closure), 347)
+#5 /home/hypebeas/public_html/wp-content/plugins/wp-content-crawler/app/Services/SchedulingService.php(166): WPCCrawler\Services\SchedulingService->execute('_wpcc_last_craw...', NULL, Object(Closure), Object(Closure), Object(Closure))
+#6 [internal function]: WPCCrawler\Services\SchedulingService->executeEventCrawlPost()
+#7 /home/hypebeas/public_html/wp-includes/class-wp-hook.php(324): call_user_func_array(Array, Array)
+#8 /home/hypebeas/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#9 /home/hypebeas/public_html/wp-includes/plugin.php(565): WP_Hook->do_action(Array)
+#10 /home/hypebeas/public_html/wp-cron.php(191): do_action_ref_array('wpcc_event_craw...', Array)
+#11 {main})
+[21-Nov-2023 13:06:16 UTC] WPCC (error): Bài trùng lặp. (Chi tiết: ID bài viết: 344)
+[21-Nov-2023 13:06:16 UTC] WPCC (info): Bài trùng lặp. (Chi tiết: Một bài trùng lặp đã được tìm thấy. URL hiện tại: https://footwearnews.com/shoes/mens-footwear/j-lindeberg-sneakers-golf-shoes-footwear-style-release-info-1203555400/, ID bài đăng trùng lặp: 344, Tiêu đề bài đăng trùng lặp: Exclusive: J. Lindeberg Steps Into Footwear with Its First-Ever Golf Sneakers, ID trang web: 347. URL không được lưu và nó được đánh dấu là đã lưu để không thử lại.)
+(Ngoại lệ: #0 /home/hypebeas/public_html/wp-content/plugins/wp-content-crawler/app/Objects/Crawling/Savers/PostSaver.php(280): WPCCrawler\Objects\Crawling\Savers\PostSaver->handleIfDuplicate()
+#1 /home/hypebeas/public_html/wp-content/plugins/wp-content-crawler/app/Objects/Crawling/Savers/PostSaver.php(204): WPCCrawler\Objects\Crawling\Savers\PostSaver->savePost(347, Array, false, true, false, false, false)
+#2 /home/hypebeas/public_html/wp-content/plugins/wp-content-crawler/app/Services/SchedulingService.php(160): WPCCrawler\Objects\Crawling\Savers\PostSaver->executePostSave(347)
+#3 [internal function]: WPCCrawler\Services\SchedulingService->WPCCrawler\Services\{closure}(347)
+#4 /home/hypebeas/public_html/wp-content/plugins/wp-content-crawler/app/Services/SchedulingService.php(422): call_user_func(Object(Closure), 347)
+#5 /home/hypebeas/public_html/wp-content/plugins/wp-content-crawler/app/Services/SchedulingService.php(166): WPCCrawler\Services\SchedulingService->execute('_wpcc_last_craw...', NULL, Object(Closure), Object(Closure), Object(Closure))
+#6 [internal function]: WPCCrawler\Services\SchedulingService->executeEventCrawlPost()
+#7 /home/hypebeas/public_html/wp-includes/class-wp-hook.php(324): call_user_func_array(Array, Array)
+#8 /home/hypebeas/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#9 /home/hypebeas/public_html/wp-includes/plugin.php(565): WP_Hook->do_action(Array)
+#10 /home/hypebeas/public_html/wp-cron.php(191): do_action_ref_array('wpcc_event_craw...', Array)
+#11 {main})
+[21-Nov-2023 13:06:39 UTC] WPCC (error): Bài trùng lặp. (Chi tiết: ID bài viết: 345)
+[21-Nov-2023 13:06:39 UTC] WPCC (info): Bài trùng lặp. (Chi tiết: Một bài trùng lặp đã được tìm thấy. URL hiện tại: https://footwearnews.com/shoes/womens-footwear/rene-caovilla-formula-1-shoes-las-vegas-grand-prix-1203556902/, ID bài đăng trùng lặp: 345, Tiêu đề bài đăng trùng lặp: Rene Caovilla Launches Formula 1-Inspired Platform Sandal for Las Vegas Grand Prix, ID trang web: 347. URL không được lưu và nó được đánh dấu là đã lưu để không thử lại.)
+(Ngoại lệ: #0 /home/hypebeas/public_html/wp-content/plugins/wp-content-crawler/app/Objects/Crawling/Savers/PostSaver.php(280): WPCCrawler\Objects\Crawling\Savers\PostSaver->handleIfDuplicate()
+#1 /home/hypebeas/public_html/wp-content/plugins/wp-content-crawler/app/Objects/Crawling/Savers/PostSaver.php(204): WPCCrawler\Objects\Crawling\Savers\PostSaver->savePost(347, Array, false, true, false, false, false)
+#2 /home/hypebeas/public_html/wp-content/plugins/wp-content-crawler/app/Services/SchedulingService.php(160): WPCCrawler\Objects\Crawling\Savers\PostSaver->executePostSave(347)
+#3 [internal function]: WPCCrawler\Services\SchedulingService->WPCCrawler\Services\{closure}(347)
+#4 /home/hypebeas/public_html/wp-content/plugins/wp-content-crawler/app/Services/SchedulingService.php(422): call_user_func(Object(Closure), 347)
+#5 /home/hypebeas/public_html/wp-content/plugins/wp-content-crawler/app/Services/SchedulingService.php(166): WPCCrawler\Services\SchedulingService->execute('_wpcc_last_craw...', NULL, Object(Closure), Object(Closure), Object(Closure))
+#6 [internal function]: WPCCrawler\Services\SchedulingService->executeEventCrawlPost()
+#7 /home/hypebeas/public_html/wp-includes/class-wp-hook.php(324): call_user_func_array(Array, Array)
+#8 /home/hypebeas/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#9 /home/hypebeas/public_html/wp-includes/plugin.php(565): WP_Hook->do_action(Array)
+#10 /home/hypebeas/public_html/wp-cron.php(191): do_action_ref_array('wpcc_event_craw...', Array)
+#11 {main})
+[21-Nov-2023 13:07:46 UTC] WPCC (error): Bài trùng lặp. (Chi tiết: ID bài viết: 346)
+[21-Nov-2023 13:07:46 UTC] WPCC (info): Bài trùng lặp. (Chi tiết: Một bài trùng lặp đã được tìm thấy. URL hiện tại: https://footwearnews.com/shoes/sneaker-news/sneaker-releases-november-2023-1203548158/, ID bài đăng trùng lặp: 346, Tiêu đề bài đăng trùng lặp: The Best Sneakers Releasing in November, ID trang web: 347. URL không được lưu và nó được đánh dấu là đã lưu để không thử lại.)
+(Ngoại lệ: #0 /home/hypebeas/public_html/wp-content/plugins/wp-content-crawler/app/Objects/Crawling/Savers/PostSaver.php(280): WPCCrawler\Objects\Crawling\Savers\PostSaver->handleIfDuplicate()
+#1 /home/hypebeas/public_html/wp-content/plugins/wp-content-crawler/app/Objects/Crawling/Savers/PostSaver.php(204): WPCCrawler\Objects\Crawling\Savers\PostSaver->savePost(347, Array, false, true, false, false, false)
+#2 /home/hypebeas/public_html/wp-content/plugins/wp-content-crawler/app/Services/SchedulingService.php(160): WPCCrawler\Objects\Crawling\Savers\PostSaver->executePostSave(347)
+#3 [internal function]: WPCCrawler\Services\SchedulingService->WPCCrawler\Services\{closure}(347)
+#4 /home/hypebeas/public_html/wp-content/plugins/wp-content-crawler/app/Services/SchedulingService.php(422): call_user_func(Object(Closure), 347)
+#5 /home/hypebeas/public_html/wp-content/plugins/wp-content-crawler/app/Services/SchedulingService.php(166): WPCCrawler\Services\SchedulingService->execute('_wpcc_last_craw...', NULL, Object(Closure), Object(Closure), Object(Closure))
+#6 [internal function]: WPCCrawler\Services\SchedulingService->executeEventCrawlPost()
+#7 /home/hypebeas/public_html/wp-includes/class-wp-hook.php(324): call_user_func_array(Array, Array)
+#8 /home/hypebeas/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#9 /home/hypebeas/public_html/wp-includes/plugin.php(565): WP_Hook->do_action(Array)
+#10 /home/hypebeas/public_html/wp-cron.php(191): do_action_ref_array('wpcc_event_craw...', Array)
+#11 {main})
+[21-Nov-2023 13:08:43 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[21-Nov-2023 13:08:43 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[21-Nov-2023 13:10:05 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[21-Nov-2023 13:10:05 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[21-Nov-2023 13:10:48 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[21-Nov-2023 13:10:48 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[21-Nov-2023 13:11:41 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[21-Nov-2023 13:11:41 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[21-Nov-2023 13:12:40 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[21-Nov-2023 13:12:40 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[21-Nov-2023 13:13:45 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[21-Nov-2023 13:13:45 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[21-Nov-2023 13:14:39 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[21-Nov-2023 13:14:39 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[21-Nov-2023 13:16:01 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[21-Nov-2023 13:16:01 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[21-Nov-2023 13:16:40 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[21-Nov-2023 13:16:40 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[21-Nov-2023 13:18:16 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[21-Nov-2023 13:18:16 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[21-Nov-2023 13:18:41 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[21-Nov-2023 13:18:41 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[21-Nov-2023 13:19:48 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[21-Nov-2023 13:19:48 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[21-Nov-2023 13:20:40 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[21-Nov-2023 13:20:40 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[21-Nov-2023 13:21:55 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[21-Nov-2023 13:21:55 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[21-Nov-2023 13:22:43 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[21-Nov-2023 13:22:43 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[21-Nov-2023 13:23:50 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[21-Nov-2023 13:23:50 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[21-Nov-2023 13:25:00 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[21-Nov-2023 13:25:00 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[21-Nov-2023 13:26:19 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[21-Nov-2023 13:26:19 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[21-Nov-2023 13:26:50 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[21-Nov-2023 13:26:50 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[21-Nov-2023 13:28:49 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[21-Nov-2023 13:28:49 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[21-Nov-2023 14:07:25 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[21-Nov-2023 14:07:25 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[21-Nov-2023 14:42:20 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[21-Nov-2023 14:42:20 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[21-Nov-2023 15:08:03 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[21-Nov-2023 15:08:03 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[21-Nov-2023 16:19:36 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[21-Nov-2023 16:19:36 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[21-Nov-2023 17:22:26 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[21-Nov-2023 17:22:26 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[21-Nov-2023 17:25:23 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[21-Nov-2023 17:25:23 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[21-Nov-2023 17:35:22 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[21-Nov-2023 17:35:22 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[21-Nov-2023 17:38:13 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[21-Nov-2023 17:38:13 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[21-Nov-2023 17:38:41 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[21-Nov-2023 17:38:41 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[21-Nov-2023 18:34:45 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[21-Nov-2023 18:34:45 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[21-Nov-2023 19:08:39 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[21-Nov-2023 19:08:39 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[21-Nov-2023 20:38:15 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[21-Nov-2023 20:38:15 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[21-Nov-2023 20:54:16 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[21-Nov-2023 20:54:16 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[21-Nov-2023 21:03:34 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[21-Nov-2023 21:03:34 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[21-Nov-2023 21:03:53 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[21-Nov-2023 21:03:53 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[21-Nov-2023 21:04:41 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[21-Nov-2023 21:04:41 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[21-Nov-2023 21:26:43 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[21-Nov-2023 21:26:43 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[21-Nov-2023 21:41:57 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[21-Nov-2023 21:41:57 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[21-Nov-2023 22:00:38 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[21-Nov-2023 22:00:38 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[21-Nov-2023 22:28:17 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[21-Nov-2023 22:28:17 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[21-Nov-2023 23:00:58 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[21-Nov-2023 23:00:58 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[21-Nov-2023 23:01:50 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[21-Nov-2023 23:01:50 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[21-Nov-2023 23:39:59 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[21-Nov-2023 23:39:59 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[22-Nov-2023 01:16:18 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[22-Nov-2023 01:16:18 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[22-Nov-2023 01:22:23 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[22-Nov-2023 01:22:23 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[22-Nov-2023 01:22:41 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[22-Nov-2023 01:22:41 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[22-Nov-2023 02:39:03 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[22-Nov-2023 02:39:03 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[22-Nov-2023 04:24:38 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[22-Nov-2023 04:24:38 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[22-Nov-2023 04:26:21 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[22-Nov-2023 04:26:21 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[22-Nov-2023 04:27:33 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[22-Nov-2023 04:27:33 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[22-Nov-2023 04:38:59 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[22-Nov-2023 04:38:59 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[22-Nov-2023 05:48:47 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[22-Nov-2023 05:48:47 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[22-Nov-2023 05:58:36 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[22-Nov-2023 05:58:36 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[22-Nov-2023 05:58:42 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[22-Nov-2023 05:58:42 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[22-Nov-2023 06:16:22 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[22-Nov-2023 06:16:22 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[22-Nov-2023 06:31:41 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[22-Nov-2023 06:31:41 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[22-Nov-2023 07:40:05 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[22-Nov-2023 07:40:05 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[22-Nov-2023 07:41:36 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[22-Nov-2023 07:41:36 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[22-Nov-2023 07:44:16 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[22-Nov-2023 07:44:16 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[22-Nov-2023 08:15:50 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[22-Nov-2023 08:15:50 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[22-Nov-2023 08:27:41 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[22-Nov-2023 08:27:41 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[22-Nov-2023 09:02:47 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[22-Nov-2023 09:02:47 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[22-Nov-2023 09:04:36 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[22-Nov-2023 09:04:36 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[22-Nov-2023 09:04:39 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[22-Nov-2023 09:04:39 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[22-Nov-2023 09:08:01 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[22-Nov-2023 09:08:01 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[22-Nov-2023 09:17:47 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[22-Nov-2023 09:17:47 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[22-Nov-2023 09:54:40 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[22-Nov-2023 09:54:40 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[22-Nov-2023 10:07:14 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[22-Nov-2023 10:07:14 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[22-Nov-2023 10:39:19 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[22-Nov-2023 10:39:19 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[22-Nov-2023 10:45:26 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[22-Nov-2023 10:45:26 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[22-Nov-2023 10:45:50 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[22-Nov-2023 10:45:50 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[22-Nov-2023 10:46:52 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[22-Nov-2023 10:46:52 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[22-Nov-2023 11:12:28 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[22-Nov-2023 11:12:28 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[22-Nov-2023 11:12:50 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[22-Nov-2023 11:12:50 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[22-Nov-2023 11:20:22 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[22-Nov-2023 11:20:22 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[22-Nov-2023 12:27:10 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[22-Nov-2023 12:27:10 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[22-Nov-2023 12:27:10 UTC] Cron reschedule event error for hook: wptslm_9bb72b6ea0cd78f59a693edfeb2a2c5e, Error code: invalid_schedule, Error message: Lịch cho sự kiện không tồn tại., Data: {"schedule":"_wptslm_1_day","args":[],"interval":86400}
+[22-Nov-2023 13:25:52 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[22-Nov-2023 13:25:52 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[22-Nov-2023 14:11:59 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[22-Nov-2023 14:11:59 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[22-Nov-2023 14:21:00 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[22-Nov-2023 14:21:00 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[22-Nov-2023 14:43:42 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[22-Nov-2023 14:43:42 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[22-Nov-2023 15:02:20 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[22-Nov-2023 15:02:20 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[22-Nov-2023 18:08:35 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[22-Nov-2023 18:08:35 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[22-Nov-2023 20:12:45 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[22-Nov-2023 20:12:45 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[22-Nov-2023 22:08:28 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[22-Nov-2023 22:08:28 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[22-Nov-2023 22:29:58 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[22-Nov-2023 22:29:58 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[22-Nov-2023 23:06:06 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[22-Nov-2023 23:06:06 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 00:55:40 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 00:55:40 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 01:14:00 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 01:14:00 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 01:19:31 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 01:19:31 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 01:20:00 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 01:20:00 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 02:28:30 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 02:28:30 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 02:52:04 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 02:52:04 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 03:29:11 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 03:29:11 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 04:01:04 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 04:01:04 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 04:33:35 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 04:33:35 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 04:33:38 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 04:33:38 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 04:36:58 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 04:36:58 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 04:46:27 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 04:46:27 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 04:46:52 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 04:46:52 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 04:47:44 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 04:47:44 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 04:49:28 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 04:49:28 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 04:51:58 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 04:51:58 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 04:54:40 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 04:54:40 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 04:57:24 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 04:57:24 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 05:00:15 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 05:00:15 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 05:03:06 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 05:03:06 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 05:05:56 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 05:05:56 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 05:08:42 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 05:08:42 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 05:11:33 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 05:11:33 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 05:14:21 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 05:14:21 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 05:17:12 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 05:17:12 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 05:20:02 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 05:20:02 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 05:22:57 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 05:22:57 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 05:25:51 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 05:25:51 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 05:28:47 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 05:28:47 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 05:31:46 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 05:31:46 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 05:34:42 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 05:34:42 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 05:37:36 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 05:37:36 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 05:40:27 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 05:40:27 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 05:43:15 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 05:43:15 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 05:46:11 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 05:46:11 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 05:46:40 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 05:46:40 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 05:49:05 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 05:49:05 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 05:51:59 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 05:51:59 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 05:54:47 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 05:54:47 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 05:57:41 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 05:57:41 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 06:00:34 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 06:00:34 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 06:03:48 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 06:03:48 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 06:06:47 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 06:06:47 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 06:09:44 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 06:09:44 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 06:12:44 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 06:12:44 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 06:15:36 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 06:15:36 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 06:18:28 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 06:18:28 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 06:21:29 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 06:21:29 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 06:24:22 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 06:24:22 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 06:27:16 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 06:27:16 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 06:30:06 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 06:30:06 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 06:33:02 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 06:33:02 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 06:35:52 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 06:35:52 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 06:38:43 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 06:38:43 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 06:41:38 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 06:41:38 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 06:44:34 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 06:44:34 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 06:47:30 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 06:47:30 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 06:50:25 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 06:50:25 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 06:53:20 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 06:53:20 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 06:56:19 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 06:56:19 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 06:59:13 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 06:59:13 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 07:02:09 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 07:02:09 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 07:05:06 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 07:05:06 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 07:08:07 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 07:08:07 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 07:11:04 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 07:11:04 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 07:14:01 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 07:14:01 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 07:17:02 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 07:17:02 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 07:20:04 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 07:20:04 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 07:23:04 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 07:23:04 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 07:26:03 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 07:26:03 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 07:28:59 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 07:28:59 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 07:32:02 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 07:32:02 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 07:34:55 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 07:34:55 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 07:37:55 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 07:37:55 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 07:40:58 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 07:40:58 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 07:44:01 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 07:44:01 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 07:47:09 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 07:47:09 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 07:50:11 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 07:50:11 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 07:53:10 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 07:53:10 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 07:56:15 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 07:56:15 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 07:59:20 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 07:59:20 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 08:02:28 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 08:02:28 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 08:05:28 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 08:05:28 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 08:08:28 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 08:08:28 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 08:11:28 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 08:11:28 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 08:14:23 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 08:14:23 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 08:17:18 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 08:17:18 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 08:17:57 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 08:17:57 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 08:19:21 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 08:19:21 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 08:20:19 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 08:20:19 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 08:21:13 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 08:21:13 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 08:22:05 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 08:22:05 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 08:22:47 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 08:22:47 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 08:24:12 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 08:24:12 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 08:25:37 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 08:25:37 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 08:26:01 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 08:26:01 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 08:27:07 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 08:27:07 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 08:27:59 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 08:27:59 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 08:29:01 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 08:29:01 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 08:29:48 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 08:29:48 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 08:31:35 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 08:31:35 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 08:31:58 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 08:31:58 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 08:31:58 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 08:31:58 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 08:32:49 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 08:32:49 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 08:34:11 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 08:34:11 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 08:34:48 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 08:34:48 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 08:37:56 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 08:37:56 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 08:40:52 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 08:40:52 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 08:43:15 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 08:43:15 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 08:43:49 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 08:43:49 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 08:46:51 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 08:46:51 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 08:49:49 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 08:49:49 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 09:39:05 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 09:39:05 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 09:48:57 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 09:48:57 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 10:30:55 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 10:30:55 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 10:32:09 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 10:32:09 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 10:32:45 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 10:32:45 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 10:40:22 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 10:40:22 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 10:41:08 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 10:41:08 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 10:41:39 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 10:41:39 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 10:43:10 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 10:43:10 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 10:45:10 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 10:45:10 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 10:47:11 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 10:47:11 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 10:49:14 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 10:49:14 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 10:55:17 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 10:55:17 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 10:55:44 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 10:55:44 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 10:57:00 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 10:57:00 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 10:58:10 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 10:58:10 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 11:00:11 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 11:00:11 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 11:01:12 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 11:01:12 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 11:03:14 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 11:03:14 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 11:05:15 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 11:05:15 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 11:07:15 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 11:07:15 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 11:09:16 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 11:09:16 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 11:11:17 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 11:11:17 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 11:12:19 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 11:12:19 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 11:14:21 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 11:14:21 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 11:16:21 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 11:16:21 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 11:18:22 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 11:18:22 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 11:20:22 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 11:20:22 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 11:21:05 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 11:21:05 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 11:22:24 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 11:22:24 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 11:22:59 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 11:22:59 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 11:27:03 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 11:27:03 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 11:30:39 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 11:30:39 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 11:32:39 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 11:32:39 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 11:34:40 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 11:34:40 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 11:36:41 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 11:36:41 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 11:38:40 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 11:38:40 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 11:41:44 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 11:41:44 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 11:43:47 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 11:43:47 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 11:45:46 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 11:45:46 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 11:47:48 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 11:47:48 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 11:49:47 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 11:49:47 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 11:55:27 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 11:55:27 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 11:55:59 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 11:55:59 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 11:57:28 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 11:57:28 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 11:57:42 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 11:57:42 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 11:59:10 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 11:59:10 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 12:02:35 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 12:02:35 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 12:05:47 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 12:05:47 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 12:22:04 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 12:22:04 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 12:34:11 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 12:34:11 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 13:23:20 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 13:23:20 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 13:24:04 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 13:24:04 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 13:24:51 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 13:24:51 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 13:26:26 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 13:26:26 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 13:28:27 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 13:28:27 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 13:29:34 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 13:29:34 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 13:30:07 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 13:30:07 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 13:31:09 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 13:31:09 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
+[23-Nov-2023 13:32:31 UTC] WPCC - No URL is found in the database. Site ID to check: 347, Last Crawled URL ID: does not exist
+[23-Nov-2023 13:32:31 UTC] WPCC (error): URL không tồn tại trong cơ sở dữ liệu.
